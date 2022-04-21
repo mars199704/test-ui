@@ -6,12 +6,8 @@ export interface ButtonProps {
   label: string
 }
 
-const Button = (props: ButtonProps) => {
-  return (
-    <View>
-      <Text>aaa</Text>
-    </View>
-  )
+const Button = () => {
+  return <Text>aaa</Text>
 }
 
 export default Button
