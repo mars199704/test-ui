@@ -52,11 +52,29 @@ export default [
     plugins: [commonjs(), nodeResolve(), typescript()],
     external: ['react', 'react-native'],
   },
-  // {
-  //   input: 'src/index.ts',
-  //   output: [
-  //     { file: 'dist/cjs/index.js', format: 'cjs' },
-  //     { file: 'dist/es/index.js', format: 'es' },
-  //   ],
-  // },
+  {
+    input: 'src/index.ts',
+    output: [
+      {
+        file: 'dist/cjs/index.js',
+        format: 'cjs',
+        sourcemap: true,
+        globals: {
+          react: 'React',
+          'react-native': 'reactNative',
+        },
+      },
+      {
+        file: 'dist/es/index.js',
+        format: 'es',
+        sourcemap: true,
+        globals: {
+          react: 'React',
+          'react-native': 'reactNative',
+        },
+      },
+    ],
+    plugins: [commonjs(), nodeResolve(), typescript()],
+    external: ['react', 'react-native'],
+  },
 ]
