@@ -1,5 +1,5 @@
 {
-  "name": "test-ui",
+  "name": "@mars199704/test-ui",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -24,5 +24,8 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "@mars199704": "https://npm.pkg.github.com"
+  }
 }
