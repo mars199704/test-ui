@@ -27,5 +27,8 @@
   "types": "dist/index.d.ts",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/mars199704"
+  },
+  "dependencies": {
+    "react-native": "^0.68.1"
   }
 }
