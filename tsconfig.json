@@ -15,7 +15,7 @@
     "sourceMap": true,
     "outDir": "dist",
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "emitDeclarationOnly": true
-  }
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": ["dist", "rollup.config.js"]
 }
