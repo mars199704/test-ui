@@ -1,23 +1,23 @@
 import React from 'react'
-
-// import { Text } from 'react-native'
-
-// export interface ButtonProps {
-//   label: string
-// }
-
-// const Button = () => {
-//   return <Text>aaa</Text>
-// }
-
-// export default Button
-
+import { Button } from 'react-native'
 export interface ButtonProps {
-  label: string
+  title: string
+  color: string
 }
 
-const Button = (props: ButtonProps) => {
-  return <button>{props.label}</button>
+const onPressLearnMore = () => {
+  console.warn('aaa')
 }
 
-export default Button
+const But = (props: ButtonProps) => {
+  return (
+    <Button
+      onPress={onPressLearnMore}
+      title={props.title}
+      color={props.color}
+      accessibilityLabel="Learn more about this purple button"
+    />
+  )
+}
+
+export default But
