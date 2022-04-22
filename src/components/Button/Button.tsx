@@ -5,11 +5,11 @@ export interface ButtonProps {
   color: string
 }
 
-const onPressLearnMore = () => {
+const onPressLearnMore = (): void => {
   console.warn('aaa')
 }
 
-const But = (props: ButtonProps) => {
+const But = (props: ButtonProps): JSX.Element => {
   return (
     <Button
       onPress={onPressLearnMore}

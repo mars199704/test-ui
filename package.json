@@ -1,6 +1,6 @@
 {
-  "name": "@mars199704/test-ui",
-  "version": "5.0.12",
+  "name": "gogoout-ui-library",
+  "version": "1.0.0",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -25,11 +25,6 @@
     "rollup-plugin-typescript2": "^0.31.2",
     "typescript": "^4.6.3"
   },
-  "main": "dist/cjs/index.js",
-  "modules": "dist/esm/index.js",
-  "files": [
-    "dist"
-  ],
   "types": "dist/index.d.ts",
   "dependencies": {
     "react-native": "^0.68.1"

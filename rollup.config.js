@@ -8,16 +8,27 @@ export default [
       file: 'dist/umd/index.js',
       name: 'test-ui',
       format: 'umd',
+      sourcemap: true,
+      globals: {
+        react: 'React',
+        'react-native': 'react-native',
+      },
     },
     plugins: [json(), typescript()],
     external: ['react', 'react-native'],
   },
   {
     input: './src/index.ts',
-    output: [
-      { file: 'dist/cjs/index.js', format: 'cjs' },
-      { file: 'dist/es/index.js', format: 'es' },
-    ],
+    output: {
+      file: 'dist/es/index.js',
+      name: 'test-ui',
+      format: 'es',
+      sourcemap: true,
+      globals: {
+        react: 'React',
+        'react-native': 'react-native',
+      },
+    },
     plugins: [json(), typescript()],
     external: ['react', 'react-native'],
   },
